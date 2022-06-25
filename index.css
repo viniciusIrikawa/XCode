@@ -20,13 +20,18 @@ body{
 #checkbox{
     display: none;
 }
-
+.section-menu{
+    position: relative;
+    background: url(media/haptx-vr-glove.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 header{
     height: 100vh;
     max-width: initial;
 }
-.nav-menu{
-    z-index: 10;
+.wrapper-logo{
+    display: none;
 }
 .nav-menu ul{
     background: linear-gradient(#1e0220, #350238);
@@ -59,6 +64,10 @@ header{
 }
 
 /* CONTENT */
+.wrapper-main{
+    width: 100%;
+}
+
 main .section{
     text-align: justify;
     padding: 0 3%;
@@ -73,55 +82,56 @@ main .section{
 }
 
 @media screen and (min-width: 768px){
-    body{
+    /* HEADER */
+    .lbl-check{
+        display: none;
+    }
+    .wrapper-logo{
+        display: block;
+        width: 20%;
+    }
+    .wrapper-logo .logo{
+        width: 100px;        
+    }
+    .nav-menu{
+        background-color: #00000069;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .nav-menu ul{
+        width: 50%;
+        background: transparent;
+        position: initial;
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        flex-direction: row;
+        list-style: none;
+        
+    }
+    .nav-menu ul li{
+        margin: 0 25px;
+    }
+
+
+    /* CONTENT */
+    .wrapper-main{
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
-
-    /* HEADER */
-    .lbl-check{
-        display: none;
-    }
-    .nav-menu{
-        background: initial;
-        /* position: fixed; */
-        top: 0;
-        width: 1280px;
-    }
-    
-    .nav-menu ul{
-        background: transparent;
-        position: initial;
-        margin-right: 5%;
-        justify-content: end;
-        flex-direction: row;
-        display: flex;
-        align-items: center;
-        list-style: none;
-        
-    }
-
-    .nav-menu ul li{
-        margin: 0 25px;
-    }
-    .header-text p{
-        width: 400px;
-    }
-    .conteiner{
-        margin-top: 20vh;
-        flex-direction: row;
-        justify-content: space-around;
-    }
-
-    /* CONTENT */
     main{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         max-width: 1280px;
-        border: 2px solid red;
     }
-    main .section{
-    }
+
 }
 @media screen and (min-width: 1024px){
 

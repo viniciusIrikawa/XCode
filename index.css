@@ -109,7 +109,7 @@ header{
 main .section{
     text-align: justify;
     padding: 0 3%;
-    margin-bottom: 120px;
+    margin-bottom: 160px;
 }
 
 /* ABOUT */
@@ -144,6 +144,33 @@ main .section{
     height: 220px;
     border-radius: 15px;
     box-shadow: 5px 5px 15px #04817997;
+}
+
+.about .roles{
+    margin-top: 100px;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-around;
+}
+
+.about .roles li{
+    font-family: 'Bicubik';
+    list-style: none;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    box-shadow: 0px 0px 15px #00ffe057;
+    justify-content: center;
+    user-select: none;
+    align-items: center;
+    border: double 3px transparent;
+    border-radius: 80px;
+    background-image: linear-gradient(#2C2D31, 
+    #2C2D31), 
+    radial-gradient(circle at top left, #00ffe0,#3020ff);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+
 }
 
 /* PRODUCTS */
@@ -181,9 +208,10 @@ main .section{
     margin: 0 5px;
 
 }
-.social-media{
+.social-media, .xcode-fixed{
     display: none;
 }
+
 
 @media screen and (min-width: 768px){
     h1{
@@ -263,6 +291,11 @@ main .section{
         height: 100%;
     }
 
+    .about .roles{
+       width: 100%;
+       justify-content: space-evenly;
+    }
+
     /* PRODUCTS */
     .card-products{
         justify-content: space-around;
@@ -302,6 +335,28 @@ main .section{
         height: 80px;
         background-color: #7476728a;
     }
+
+    /* XCODE FIXED IN PAGE - DESKTOP */
+    .xcode-fixed{
+        position: fixed;
+        bottom: 0;
+        right: 0%;
+        width: 180px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+    .xcode-fixed img{
+        width: 90px;
+        filter: contrast(0);
+    }
+    .xcode-fixed span{
+        font-family: 'Bicubik';
+        font-size: 1.5em;
+        color: #535554;
+    }
+
 }
 @media screen and (min-width: 1024px){
 

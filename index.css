@@ -160,9 +160,11 @@ main .section{
 
 /* FOOTER */
 .footer{
+    font-family: 'Cambria';
     text-align: center;
-    background-color: #b949ff;
+    background: linear-gradient(to right, #77767669, #4444459e);
     color: #fff;
+    padding: 30px 0;
 }
 
 @media screen and (min-width: 768px){

@@ -11,6 +11,10 @@
         url('fonts/bicubik-webfont.woff') format('woff');
 
   }
+
+  ::-webkit-scrollbar{
+    display: none;
+  }
 body{
     background-color: #1c1c1c;
 }
@@ -152,7 +156,7 @@ main .section{
 }
 
 .about .roles{
-    margin-top: 100px;
+    margin-top: 200px;
     display: flex;
     flex-flow: wrap;
     justify-content: space-around;

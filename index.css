@@ -12,9 +12,9 @@
 
   }
 
-  ::-webkit-scrollbar{
-    display: none;
-  }
+::-webkit-scrollbar{
+display: none;
+}
 body{
     background-color: #1c1c1c;
 }

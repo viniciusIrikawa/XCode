@@ -1,0 +1,215 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+@font-face {
+    font-family: 'Bicubik';
+    src: url("../fonts/bicubik-webfont.eot");
+    src:
+        url('../fonts/bicubik-webfont.woff2') format('woff2'),
+        url('../fonts/bicubik-webfont.svg') format('svg'),
+        url('../fonts/bicubik-webfont.woff') format('woff');
+
+  }
+
+::-webkit-scrollbar{
+display: none;
+}
+
+body{
+    background-color: #1c1c1c;
+}
+
+h1, h2, h3{
+    font-family: 'Bicubik';
+    text-transform: uppercase;
+    color: #dfdddd;
+}
+
+h1{
+    font-size: 1em;
+}
+
+h2{
+    font-size: 1.3em;
+}
+
+
+/* HEADER MENU */
+.lbl-check{
+    position: absolute;
+    top: 2%;
+    right: 8%;
+    color: #ddd;
+    font-size: 30px;
+    cursor: pointer;
+    user-select: none;
+    z-index: 100;
+}
+#checkbox{
+    display: none;
+}
+.section-menu{
+    position: relative;
+    /* background: url(../media/haptx-vr-glove.jpg);
+    background-size: cover;
+    background-repeat: no-repeat; */
+    background: linear-gradient(to top, #3c153c, #1b131a);
+}
+header{
+    height: 90vh;
+    max-width: initial;
+}
+.wrapper-logo{
+    display: none;
+}
+.nav-menu ul{
+    background: linear-gradient(#1e0220, #350238);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    list-style: none;
+    padding: 20px 0px 30px 0;
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    transition: 0.4s ease;
+}
+#checkbox:checked ~ nav ul {
+    left: 0;
+}
+
+.nav-menu ul li {
+    font-family: 'Roboto';
+    padding: 15px 0;
+}
+.nav-menu ul li a{
+    text-decoration: none;
+    color: #c567ff;
+}
+.nav-menu ul li a:hover{
+    text-shadow: 0px 0px 5px #b949ff;
+    color: #d99dff;
+}
+
+.header-title{
+    border: 2px solid red;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 90%;
+    transform: translate(-50%, -50%);
+}
+.header-title span{
+    color: #7f00cf;
+}
+.arrow-down{
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    margin-top: 100px;
+    color: #ffffff8c;
+    font-size: 1.5em;
+    animation: move 1s infinite;
+}
+@keyframes move {
+    0%{
+        bottom: 10%;
+    }
+    50%{
+        bottom: 7%;
+    }
+    100%{
+        bottom: 10%;
+    }
+}
+
+/* CONTENT */
+.wrapper-main{
+    width: 100%;
+}
+
+main .section{
+    text-align: justify;
+    padding: 0 3%;
+    margin-bottom: 160px;
+}
+
+
+/* FOOTER */
+.footer{
+    font-family: 'Roboto';
+    text-align: center;
+    color: #c7c5c5ad;
+    padding: 30px 0;
+    user-select: none;
+}
+.footer i{
+    margin: 0 3px;
+}
+
+@media screen and (min-width: 768px){
+    h1{
+        font-size: 2em;
+    }
+
+    /* HEADER */
+    header{
+        height: 100vh;
+    }
+    .lbl-check{
+        display: none;
+    }
+    .wrapper-logo{
+        display: block;
+        width: 20%;
+    }
+    .wrapper-logo .logo{
+        width: 100px;        
+    }
+    .nav-menu{
+        background-color: #00000069;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .nav-menu ul{
+        width: 50%;
+        background: transparent;
+        position: initial;
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        flex-direction: row;
+        list-style: none;
+        
+    }
+    .nav-menu ul li{
+        margin: 0 25px;
+    }
+
+    /* CONTENT */
+    .wrapper-main{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    main{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        max-width: 1300px;
+    }
+
+    /* .about, .products, .team{
+        width: 90%;
+    } */
+
+}

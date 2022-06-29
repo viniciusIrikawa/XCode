@@ -183,7 +183,6 @@ main .section{
 }
 
 /* PRODUCTS */
-
 .products h3{
     text-align: end;
 }
@@ -192,32 +191,44 @@ main .section{
     flex-direction: row;
     flex-flow: wrap;
     align-items: center;
-    margin-top: 20px;
-}
-.card-products .card{
-    width: 100%;
-    height: 250px;
-    background: url(media/haptx-vr-glove.jpg);
-    background-size: cover;
-    margin: 10px 0;
-    border-radius: 20px;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: 1s;
-}
-.card-products .card:hover{
-    box-shadow: 0px 0px 60px #a3a0a080;
+    margin-top: 50px;
 }
 
-.card-products .detail-card{
-    width: 80%;
-    z-index: 5;
-    padding: 10px 20px;
+.card-products .card{
+    border-radius: 20px;
+    width: 100%;
+    position: relative;
+    margin: 5px 0;
+}
+.card-products img{
+    transition: .5s  ;
+    border-radius: 20px;
+    width: 100%;
+}
+.card-products h4{
+    padding-left: 10px;
+    margin-bottom: 10px;
+    border-left: 4px solid #00ffe0;
+}
+.card-products p{
+    margin-bottom: 15px;
+}
+.card-products .card:hover img{
+    filter: brightness(0.2);
+}
+.card-products .desc{
     display: none;
     color: #fff;
     font-family: 'Roboto';
+    width: 80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.card-products .card:hover .desc{
+    z-index: 5;
+    display: block; 
 }
 .card-products .btn-card{
     padding: 10px 20px;
@@ -228,36 +239,20 @@ main .section{
     cursor: pointer;
     border-radius: 3px;
     transition: .3s;
+    text-decoration: none;
 }
-
 .card-products .btn-card:hover{
+    cursor: pointer;
     box-shadow: 0px 0px 10px #eb05f9;
-}
-.card-products .overlay{
-    transition: .5s;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-color: transparent;
-    width: 100%;
-    height: 100%;
-    border-radius: 20px;
 }
 .card-products .border-square{
     border-radius: 20px;
     position: absolute;
-    top: 2%;
-    left: 2%;
-    width: 96%;
-    height: 95%;
-    border: 1px solid rgba(255, 255, 255, 0.24);
-    z-index: 1;
-}
-.card-products .card:hover > .overlay{
-    background-color: rgba(0, 0, 0, 0.644);
-}
-.card-products .card:hover > .detail-card{
-    display: block;
+    top: 4%;
+    left: 3%;
+    width: 94%;
+    height: 90%;
+    border: 1px solid #ffffff94;
 }
 
 /* PROFILE */
@@ -486,22 +481,14 @@ main .section{
     /* XCODE FIXED IN PAGE - DESKTOP */
     .xcode-fixed{
         position: fixed;
-        bottom: 0;
+        bottom: -3%;
         right: 0%;
         width: 180px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        user-select: none;
+        display: block;
     }
     .xcode-fixed img{
-        width: 90px;
+        width: 150px;
         filter: contrast(0);
-    }
-    .xcode-fixed span{
-        font-family: 'Bicubik';
-        font-size: 1.5em;
-        color: #535554;
     }
 
 }

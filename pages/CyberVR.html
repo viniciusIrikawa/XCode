@@ -36,14 +36,33 @@
         <div class="header-title">
             <h1> <span>Cyber Vr</span> Neurofeedback 4 Metaverse </h1>
         </div>
-            <a class="arrow-down" href="#"> <i class="fa-solid fa-arrow-down"></i> </a>
+            <a class="arrow-down" href="#about"> <i class="fa-solid fa-arrow-down"></i> </a>
     </section>
 
         <div class="wrapper-main">
             <main>
-                <section class="section about">
-                    <h2>  </h2>
-                    <p></p>
+                <section class="section about" id="about">
+                    <h2> Consiste em... </h2>
+                    <p>  Criar Warebles (dispositivos vestíveis), integrando as tecnologias de IOT e VR para fornecer neurofeedback sensorial aos usuários do metaverso.</p>
+                </section>
+                
+                <section class="section goals" id="">
+                    <h2> Metas </h2>
+                    <div class="wrapper-cards">
+                        <div class="card-goal">
+                            <span class="okr"> OKR 1 </span>
+                            <p> Cyber Gloves </p>
+                            <i class="fa-solid fa-check"></i>
+                        </div>
+                        
+                        <div class="card-goal">
+                            <span class="okr"> OKR 2 </span>
+                            <p> Omnidirectional Treadmill </p>
+                            <i class="fa-solid fa-check"></i>
+                        </div>
+
+
+                    </div>
                 </section>
 
                 <footer  class="footer">
@@ -58,6 +77,13 @@
 
             </main>
         </div>
+
+        <script>
+            const arrow = document.querySelector('.arrow-down');
+            arrow.addEventListener('click', () => {
+                arrow.style.display = 'none';
+            })
+        </script>
 </body>
 
 </html>

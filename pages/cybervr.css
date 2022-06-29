@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
 }
 @font-face {
     font-family: 'Bicubik';
@@ -51,9 +52,6 @@ h2{
 }
 .section-menu{
     position: relative;
-    /* background: url(../media/haptx-vr-glove.jpg);
-    background-size: cover;
-    background-repeat: no-repeat; */
     background: linear-gradient(to top, #3c153c, #1b131a);
 }
 header{
@@ -95,7 +93,6 @@ header{
 }
 
 .header-title{
-    border: 2px solid red;
     text-align: center;
     position: absolute;
     top: 50%;
@@ -134,10 +131,56 @@ header{
 
 main .section{
     text-align: justify;
-    padding: 0 3%;
+    padding-left: 3%;
+    padding-right: 3%;
     margin-bottom: 160px;
 }
 
+/* ABOUT */
+.about{
+    padding: 15vh;
+    color: #fff;
+    font-family: 'Roboto';
+    background: linear-gradient(to top, #1c1c1c, #3C153C);
+}
+.about p{
+    margin: 10px 0;
+}
+
+/* GOALS */
+.wrapper-cards{
+    margin-top: 20px;
+}
+.wrapper-cards .card-goal{
+    border: 2px solid #9b198b8f;
+    padding: 20px 10px;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    border-radius: 10px;
+    margin: 10px 0;
+    background: linear-gradient(to right, #00000069, #3C153C);
+    font-family: 'Roboto';
+    position: relative;
+}
+.wrapper-cards .card-goal:hover{
+    background: linear-gradient(to right, #11101069, #551a55);
+}
+
+.wrapper-cards .okr{
+    font-family: 'Bicubik';
+    background-color: #c567ff;  
+    margin-right: 30px;
+    padding: 20px 8px;
+    border-radius: 50px;
+}
+.wrapper-cards i{
+    color: #ffffffb8;
+    font-size: 1.3em;
+    position: absolute;
+    right: 8%;
+    top: 40%;
+}
 
 /* FOOTER */
 .footer{
@@ -193,6 +236,10 @@ main .section{
         margin: 0 25px;
     }
 
+    .section-menu{
+        background: linear-gradient(to top, #1c1c1c, #720164);
+    }
+
     /* CONTENT */
     .wrapper-main{
         display: flex;
@@ -208,8 +255,17 @@ main .section{
         max-width: 1300px;
     }
 
-    /* .about, .products, .team{
+    .about, .goals{
         width: 90%;
-    } */
+    }
+
+    /* ABOUT */
+    .about{
+        background: transparent;
+    }
+
+    /* GOALS */
+
+    
 
 }

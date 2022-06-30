@@ -191,7 +191,7 @@ main .section{
     flex-direction: row;
     flex-flow: wrap;
     align-items: center;
-    margin-top: 50px;
+    margin-top: 20px;
 }
 
 .card-products .card{
@@ -269,6 +269,7 @@ main .section{
     margin: 10px;
     background-color: #29252960;
     width: 35%;
+    height: 250px;
     display: flex;
     justify-content: center;
     align-items: center;

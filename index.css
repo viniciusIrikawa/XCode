@@ -59,10 +59,17 @@ h4{
 }
 .section-menu{
     position: relative;
-    background: url(media/haptx-vr-glove.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
+    overflow: hidden;
 }
+.video-background{
+    position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        filter: brightness(0.28);
+        z-index: -1;
+}
+
 header{
     height: 100vh;
     max-width: initial;
@@ -141,6 +148,8 @@ main .section{
     margin: 20px 0;
     font-size: 1.3em;
     width: 100%;
+    font-style: italic;
+    text-align: center;
 }
 
 .about img{
@@ -162,10 +171,10 @@ main .section{
     justify-content: space-around;
 }
 
-.about .roles li{
+.about .roles li, 
+.about .roles span{
     font-family: 'Bicubik';
     list-style: none;
-    width: 80px;
     height: 80px;
     display: flex;
     box-shadow: 0px 0px 15px #00ffe057;
@@ -179,7 +188,19 @@ main .section{
     radial-gradient(circle at top left, #00ffe0,#3020ff);
     background-origin: border-box;
     background-clip: content-box, border-box;
-
+}
+.about .roles li{
+    width: 80px;
+}
+.wrapper-span {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+.about .roles span{
+    width: 200px;
 }
 
 /* PRODUCTS */
@@ -284,17 +305,15 @@ main .section{
     top: 0;
     left: 0;
     z-index: -1;
-    background-color: #00ffe0;
+    background: linear-gradient(to right, #5a5a5a, #282828);
     display: flex;
     justify-content: center;
-    filter: brightness(0.5);
     border-radius: 15px 15px 10px 10px;
 }
 .card-profile .background img{
     width: 100%;
     height: 100%;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
-    filter: blur(4px);
+    filter: drop-shadow( 0px 0px 10px rgb(182, 247, 247));
 }
 
 .card-profile .img-profile{
@@ -368,13 +387,14 @@ main .section{
         background-color: #00000069;
         width: 100%;
         display: flex;
-        justify-content: center;
+        justify-content: space-around;
         align-items: center;
     }
     
     .nav-menu ul{
         width: 50%;
         background: transparent;
+        padding: 0px;
         position: initial;
         display: flex;
         justify-content: end;
@@ -433,10 +453,11 @@ main .section{
 
     /* PRODUCTS */
     .card-products{
-        justify-content: space-around;
+        justify-content: center;
     }
     .card-products .card{
         width: 40%;
+        margin: 1%;
     }
     
     /* PROFILE */

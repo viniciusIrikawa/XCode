@@ -267,6 +267,7 @@ main .section{
     filter: grayscale(0);
 }
 
+
 /* FOOTER */
 .footer{
     font-family: 'Roboto';
@@ -319,10 +320,6 @@ main .section{
     }
     .nav-menu ul li{
         margin: 0 25px;
-    }
-
-    .section-menu{
-        /* background: linear-gradient(to top, #1c1c1c, #720164); */
     }
 
     /* CONTENT */

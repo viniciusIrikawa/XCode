@@ -1,0 +1,44 @@
+body{
+    background-color: rebeccapurple;
+}
+
+/* TESTE ----------------------------------------------------------------*/
+.wrapper-slider{
+    padding: 70px 0;
+    overflow-x: hidden;
+    width: 90%;
+}
+
+.my-slider{
+    padding: 0 70px;
+}
+
+.slick-initialized .slick-slide{
+    color: #FFF;
+    height: 300px;
+    margin: 0 15px 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    object-fit: cover;
+}
+
+.my-slider img{
+  width: 100%;
+  object-fit: cover;
+}
+  
+.slick-next, .slick-prev{
+    z-index: 5;
+}
+.slick-next{
+    right: 15px;
+}
+.slick-prev{
+    left: 15px;
+}
+.slick-next:before, .slick-prev:before{
+    color: #000;
+    font-size: 26px;
+} 
+

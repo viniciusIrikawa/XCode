@@ -1,4 +1,154 @@
 *{
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
+}
+@font-face {
+    font-family: 'Bicubik';
+    src: url("../fonts/bicubik-webfont.eot");
+    src:
+        url('../fonts/bicubik-webfont.woff2') format('woff2'),
+        url('../fonts/bicubik-webfont.svg') format('svg'),
+        url('../fonts/bicubik-webfont.woff') format('woff');
+
+  }
+
+::-webkit-scrollbar{
+display: none;
+}
+
+body{
+    background-color: #1c1c1c;
+}
+
+
+/* HEADER MENU */
+.lbl-check{
+    position: absolute;
+    top: 2%;
+    right: 8%;
+    color: #ddd;
+    font-size: 30px;
+    cursor: pointer;
+    user-select: none;
+    z-index: 100;
+}
+#checkbox{
+    display: none;
+}
+.section-menu{
+    position: relative;
+    overflow: hidden;
+}
+
+.video-background{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    filter: brightness(0.3);
+    z-index: -1;
+}
+.btn-conheca{
+    position: absolute;
+    bottom: 0%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #fff;
+    border: 2px solid #fff;
+    font-size: 20px;
+    cursor: pointer;
+    transition: .3s;
+    padding: 10px 30px;
+    text-decoration: none;
+    border-radius: 50px;    
+    font-family: 'Roboto';
+
+}
+.btn-conheca:hover{
+    background-color: rgb(192 18 200);
+}
+
+header{
+    height: 90vh;
+    max-width: initial;
+}
+.wrapper-logo{
+    display: none;
+}
+.nav-menu ul{
+    background: linear-gradient(#1e0220, #350238);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    list-style: none;
+    padding: 20px 0px 30px 0;
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    transition: 0.4s ease;
+}
+#checkbox:checked ~ nav ul {
+    left: 0;
+}
+
+.nav-menu ul li {
+    font-family: 'Roboto';
+    padding: 15px 0;
+}
+.nav-menu ul li a{
+    text-decoration: none;
+    color: #c567ff;
+}
+.nav-menu ul li a:hover{
+    text-shadow: 0px 0px 5px #b949ff;
+    color: #d99dff;
+}
+
+@media screen and (min-width: 768px){
+    /* HEADER */
+    header{
+        height: 100vh;
+    }
+    .lbl-check{
+        display: none;
+    }
+    .wrapper-logo{
+        display: block;
+        width: 20%;
+    }
+    .wrapper-logo .logo{
+        width: 100px;        
+    }
+    .nav-menu{
+        background-color: #00000069;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .nav-menu ul{
+        width: 50%;
+        background: transparent;
+        position: initial;
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        flex-direction: row;
+        list-style: none;
+        
+    }
+    .nav-menu ul li{
+        margin: 0 25px;
+    }
+
+    .btn-conheca{
+        position: absolute;
+        bottom: 5%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
 }

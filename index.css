@@ -345,6 +345,15 @@ main .section{
     margin: 0 2px;
 }
 
+/* XCODE NA MIDIA */
+.midia h3{
+    margin-bottom: 20px;
+}
+.midia iframe{
+    border-radius: 15px;
+    width: 100%;
+}
+
 /* FOOTER */
 .footer{
     font-family: 'Roboto';
@@ -423,7 +432,7 @@ main .section{
         max-width: 1300px;
     }
 
-    .about, .products, .team{
+    .about, .products, .team, .midia{
         width: 90%;
     }
     
@@ -468,6 +477,13 @@ main .section{
         padding: 95px 15px 20px 15px;
         width: 15%;
     }
+
+    /* XCODE NA MIDIA */
+    .midia iframe{
+        width: 400px;
+        height: 220px;
+    }
+
     /* SOCIAL MEDIA ICONS */
     .mobile-icons{
         display: none;
